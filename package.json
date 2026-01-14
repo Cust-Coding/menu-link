@@ -1,0 +1,9 @@
+{
+  "name": "menu-link",
+  "version": "1.0.0",
+  "description": "SaaS de menu digital inteligente para restaurantes, com gestão completa, pedidos pay-first, planos por subscrição e recursos avançados como analytics, stock e IA",
+  "keywords": [],
+  "author": "@CustCoding",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.0"
+}
