@@ -1,9 +1,9 @@
 {
-    "features": "Features",
-    "pricing": "Pricing",
-    "About": "About",
-    "contact": "Contact",
-    "login": "Login",
-    "siginup": "Sigin Up"
-    
+  "features": "Features",
+  "pricing": "Pricing",
+  "about": "About",
+  "support": "Support",
+  "contact": "Contact",
+  "login": "Login",
+  "signup": "Sign Up"
 }

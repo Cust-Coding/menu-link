@@ -1,8 +1,9 @@
 {
-    "features": "Fucionalidades",
-    "pricing": "Precos",
-    "about": "Sobre",
-    "contact": "Contato",
-    "login": "Entar",
-    "sigup": "Cadastrar"
+  "features": "Funcionalidades",
+  "pricing": "Preços",
+  "about": "Sobre",
+  "support": "Suporte",
+  "contact": "Contato",
+  "login": "Entrar",
+  "signup": "Cadastrar"
 }
