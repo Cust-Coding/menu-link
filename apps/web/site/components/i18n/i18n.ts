@@ -5,10 +5,11 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import enTranslation from "@/locales/en/translation.json";
 import ptTranslation from "@/locales/pt/ translation.json";
 
-interface TranslationKeys{
+export interface TranslationKeys{
     features: string;
     pricing: string;
     about: string;
+    support: string;
     contact: string;
     login: string;
     signup: string;
