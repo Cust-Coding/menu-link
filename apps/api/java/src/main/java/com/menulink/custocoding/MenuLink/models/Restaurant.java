@@ -34,7 +34,7 @@ public class Restaurant {
             mappedBy = "restaurant",
             cascade = CascadeType.ALL
     )
-    private List<Menus> menus;
+    private List<Menu> menus;
 
 
     @OneToMany(mappedBy = "restaurant")

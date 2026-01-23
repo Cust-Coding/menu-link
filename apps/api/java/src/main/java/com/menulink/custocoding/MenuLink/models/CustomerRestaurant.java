@@ -24,7 +24,7 @@ public class CustomerRestaurant {
 
     @ManyToOne
     @JoinColumn(name = "restaurant_id")
-    private Restaurants restaurants;
+    private Restaurant restaurant;
 
 
 

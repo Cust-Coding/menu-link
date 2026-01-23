@@ -7,40 +7,23 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
+@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name = "table_employee")
-public class Employees {
-
+public class Menu {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    public String firstname;
+    private String name;
 
     @Column(nullable = false)
-    public String lastname;
-
-
-    @Column(nullable = false, unique = true)
-    public String email;
-
-
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    public Employees role;
+    private String description;
 
     @ManyToOne
     @JoinColumn(name = "restaurant_id")
-    private Restaurants restaurants;
-
-
-    //@Column()
-    //private LocalDateTime hired;
-
-
+    private Restaurant restaurant;
 }

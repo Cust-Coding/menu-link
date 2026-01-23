@@ -20,7 +20,7 @@ public class ProductStock {
     private Integer quantity;
 
     @OneToMany(mappedBy = "stock", cascade = CascadeType.ALL)
-    private List<Products> products;
+    private List<Product> products;
 
     //@Column()
     //private LocalDateTime updated;

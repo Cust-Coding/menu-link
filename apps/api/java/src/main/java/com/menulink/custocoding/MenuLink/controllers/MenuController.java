@@ -3,11 +3,9 @@ package com.menulink.custocoding.MenuLink.controllers;
 
 import com.menulink.custocoding.MenuLink.dtos.MenuCreateDTO;
 import com.menulink.custocoding.MenuLink.dtos.MenuResponseDTO;
-import com.menulink.custocoding.MenuLink.models.Menus;
+import com.menulink.custocoding.MenuLink.models.Menu;
 import com.menulink.custocoding.MenuLink.repositories.MenuRepository;
 import org.springframework.web.bind.annotation.*;
-
-import java.awt.*;
 
 @RestController
 public class MenuController {
@@ -27,21 +25,21 @@ public class MenuController {
         return toMenuResponse(savedMenu);
     }
 
-    private Menus toMenuDTO(MenuCreateDTO dto){
-        var menu = new Menus();
+    private Menu toMenuDTO(MenuCreateDTO dto){
+        var menu = new Menu();
         menu.setName(dto.name());
         menu.setDescription(dto.description());
-        menu.setRestaurants(dto.restaurants());
+        menu.setRestaurant(dto.restaurant());
 
         return menu;
     }
 
-    private MenuResponseDTO toMenuResponse(Menus dto){
+    private MenuResponseDTO toMenuResponse(Menu dto){
         return new MenuResponseDTO(
                 dto.getId(),
                 dto.getName(),
                 dto.getDescription(),
-                dto.getRestaurants()
+                dto.getRestaurant()
         );
     }
 

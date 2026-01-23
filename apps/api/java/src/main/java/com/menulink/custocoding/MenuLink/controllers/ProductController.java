@@ -3,8 +3,8 @@ package com.menulink.custocoding.MenuLink.controllers;
 
 import com.menulink.custocoding.MenuLink.dtos.ProductCreateDTO;
 import com.menulink.custocoding.MenuLink.dtos.ProductResponseDTO;
-import com.menulink.custocoding.MenuLink.models.Products;
-import com.menulink.custocoding.MenuLink.repositories.ProductRepositoy;
+import com.menulink.custocoding.MenuLink.models.Product;
+import com.menulink.custocoding.MenuLink.repositories.ProductRepository;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ProductController {
 
-    private final ProductRepositoy productRepository;
+    private final ProductRepository productRepository;
 
-    public ProductController(ProductRepositoy productRepository){
+    public ProductController(ProductRepository productRepository){
         this.productRepository = productRepository;
     }
 
@@ -28,25 +28,25 @@ public class ProductController {
         return toProductResponseDTO(savedProduct);
     }
 
-    private Products toProductDTO(ProductCreateDTO dto){
-        var product = new Products();
+    private Product toProductDTO(ProductCreateDTO dto){
+        var product = new Product();
 
         product.setNome(dto.name());
         product.setDescription(dto.description());
         product.setPrice(dto.price());
-        product.setRestaurants(dto.restaurants());
+        product.setRestaurant(dto.restaurant());
         product.setStock(dto.stock());
 
         return product;
     }
 
-    private ProductResponseDTO toProductResponseDTO(Products dto){
+    private ProductResponseDTO toProductResponseDTO(Product dto){
         return new ProductResponseDTO(
                 dto.getId(),
                 dto.getNome(),
                 dto.getDescription(),
                 dto.getPrice(),
-                dto.getRestaurants(),
+                dto.getRestaurant(),
                 dto.getStock()
         );
     }

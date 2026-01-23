@@ -2,7 +2,7 @@ package com.menulink.custocoding.MenuLink.controllers;
 
 import com.menulink.custocoding.MenuLink.dtos.CustomerCreateDTO;
 import com.menulink.custocoding.MenuLink.dtos.CustomerResponseDTO;
-import com.menulink.custocoding.MenuLink.models.Customers;
+import com.menulink.custocoding.MenuLink.models.Customer;
 import com.menulink.custocoding.MenuLink.repositories.CustomerRepository;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,8 +28,8 @@ public class CustomerController {
 
     }
 
-    private Customers toCustomerDTO(CustomerCreateDTO dto){
-        var customer = new Customers();
+    private Customer toCustomerDTO(CustomerCreateDTO dto){
+        var customer = new Customer();
 
         customer.setUsername(dto.username());
         customer.setPhonenumber(dto.phonenumber());
@@ -38,7 +38,7 @@ public class CustomerController {
         return customer;
 
     }
-    private CustomerResponseDTO toCustomerResponseDTO(Customers dto){
+    private CustomerResponseDTO toCustomerResponseDTO(Customer dto){
         return new CustomerResponseDTO(
                 dto.getId(),
                 dto.getUsername(),
