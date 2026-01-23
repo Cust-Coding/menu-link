@@ -11,18 +11,19 @@ export default function Nav() {
     "features",
     "pricing",
     "about",
+    "support",
     "contact",
   ];
 
   return (
-    <nav className="flex space-x-6 p-4 bg-gray-100">
+    <nav className="flex items-center justify-center gap-4 py-1.5 px-3 bg-gray-100/10 rounded-md ">
       {menuKeys.map((key) => (
         <a
           key={String(key)}
           href={`#${key}`}
-          className="text-gray-700 hover:text-green-600"
+          className="text-dynamic text-white hover:text-green-600 hover:font-semibold transition-colors duration-300"
         >
-          {t(key)} 
+          {t(key)}
         </a>
       ))}
     </nav>
