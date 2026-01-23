@@ -31,11 +31,9 @@ public class Products {
     @Column(precision = 10, scale = 2)
     private BigDecimal price;
 
-
     @ManyToOne
     @JoinColumn(name = "restaurant_id")
     private Restaurants restaurants;
-
 
     @ManyToOne
     @JoinColumn(name = "stock_id")

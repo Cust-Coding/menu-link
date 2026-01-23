@@ -12,7 +12,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Restaurants {
+public class Restaurant {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
