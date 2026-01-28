@@ -23,7 +23,7 @@ public class Owner {
     private String email;
 
     @OneToMany(mappedBy = "owner")
-    private Restaurants restaurants;
+    private Restaurant restaurant;
 
 
 

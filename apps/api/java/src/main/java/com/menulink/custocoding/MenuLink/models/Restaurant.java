@@ -12,7 +12,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Restaurants {
+public class Restaurant {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -34,7 +34,7 @@ public class Restaurants {
             mappedBy = "restaurant",
             cascade = CascadeType.ALL
     )
-    private List<Menus> menus;
+    private List<Menu> menus;
 
 
     @OneToMany(mappedBy = "restaurant")

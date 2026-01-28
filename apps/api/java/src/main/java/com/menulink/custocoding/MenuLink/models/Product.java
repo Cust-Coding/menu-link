@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Entity
 @Table(name = "table_products")
-public class Products {
+public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,11 +31,9 @@ public class Products {
     @Column(precision = 10, scale = 2)
     private BigDecimal price;
 
-
     @ManyToOne
     @JoinColumn(name = "restaurant_id")
-    private Restaurants restaurants;
-
+    private Restaurant restaurant;
 
     @ManyToOne
     @JoinColumn(name = "stock_id")
