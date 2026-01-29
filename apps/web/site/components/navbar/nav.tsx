@@ -16,6 +16,7 @@ export default function Nav() {
   ];
 
   return (
+    <>
     <nav className="flex items-center justify-center gap-4 py-1.5 px-3 bg-gray-100/10 rounded-md ">
       {menuKeys.map((key) => (
         <a
@@ -27,5 +28,8 @@ export default function Nav() {
         </a>
       ))}
     </nav>
+    
+    </>
+    
   );
 }
