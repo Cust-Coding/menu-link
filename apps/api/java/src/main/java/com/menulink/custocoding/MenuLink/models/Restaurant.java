@@ -41,7 +41,6 @@ public class Restaurant {
     private List<CustomerRestaurant> customerRestaurants;
 
 
-
     @OneToOne
     @JoinColumn(name = "adress_id", nullable = false)
     private RestaurantAdress adress;
