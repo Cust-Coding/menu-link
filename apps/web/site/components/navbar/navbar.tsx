@@ -18,7 +18,7 @@ export default function Navbar(){
            <div className="buttons flex items-center justify-center gap-3">
             <LangToggle/>
             <ThemeToggle/>
-            <button className="bg-amber-50/20 hover:text-green-600 hover:p-2 hover:font-semibold transition-colors duration-600 rounded-full p-1 cursor-pointer">
+            <button className="bg-foreground/20 hover:text-green-600 hover:p-2 hover:font-semibold transition-colors duration-600 rounded-full p-1 cursor-pointer">
                 <UserRound size={16}/>
             </button>
             

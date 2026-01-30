@@ -5,7 +5,7 @@ export default function LangToggle(){
         
         <DropdownHover
             button={
-                <div className=" flex items-center gap-1 bg-amber-50/20 p-1 justify-center rounded-sm cursor-pointer">
+                <div className=" flex items-center gap-1 bg-foreground/8 p-1 justify-center rounded-sm cursor-pointer">
                     <Languages size={16}/> 
                     <ChevronDown size={13}/>
                 </div>
