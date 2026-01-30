@@ -6,7 +6,12 @@ import com.menulink.custocoding.MenuLink.dtos.ProductResponseDTO;
 import com.menulink.custocoding.MenuLink.mappers.ProductMapper;
 import com.menulink.custocoding.MenuLink.repositories.ProductRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
@@ -22,5 +27,31 @@ public class ProductService {
         var savedProduct = productRepository.save(product);
         return productMapper.toProductResponseDTO(savedProduct);
     }
+
+    public List<ProductResponseDTO> getAllProducts(){
+        return productRepository.findAll()
+                .stream()
+                .map(productMapper::toProductResponseDTO)
+                .collect(Collectors.toList());
+    }
+
+    public ProductResponseDTO getProductById(
+            Long id
+    ){
+        return productRepository.findById(id)
+                .map(productMapper::toProductResponseDTO)
+                .orElseThrow(() -> new ResponseStatusException(
+                        HttpStatus.NOT_FOUND, "Product not found"
+                ));
+    }
+
+    public void deleteProduct(
+            Long id
+    ){
+        productRepository.deleteById(id);
+    }
+
+
+
 
 }
