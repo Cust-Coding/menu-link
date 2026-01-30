@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
+
+/* essa cena parece estar a dar conflito com o botao de theme */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+/* botei essa nova class para tirar aquela cena de preferencia  */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-work-sans); 
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-work-sans), sans-serif;
+  transition:color 0.3s ease, background-color 0.3s ease,; 
 }

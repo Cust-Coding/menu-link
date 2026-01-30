@@ -16,13 +16,12 @@ export default function Nav() {
   ];
 
   return (
-    <>
-    <nav className="flex items-center justify-center gap-4 py-1.5 px-3 bg-gray-100/10 rounded-md ">
+    <nav className="flex items-center justify-center gap-4 py-1.5 px-3 bg-foreground/6 rounded-md ">
       {menuKeys.map((key) => (
         <a
           key={String(key)}
           href={`#${key}`}
-          className="text-dynamic text-white hover:text-green-600 hover:font-semibold transition-colors duration-300"
+          className="text-dynamic text-foreground hover:text-green-600 hover:font-semibold transition-colors duration-300"
         >
           {t(key)}
         </a>
