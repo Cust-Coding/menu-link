@@ -5,47 +5,39 @@ import com.menulink.custocoding.MenuLink.dtos.RestaurantCreateDTO;
 import com.menulink.custocoding.MenuLink.dtos.RestaurantResponseDTO;
 import com.menulink.custocoding.MenuLink.models.Restaurant;
 import com.menulink.custocoding.MenuLink.repositories.RestaurantRepository;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import com.menulink.custocoding.MenuLink.services.RestaurantService;
+import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 @RestController
+@AllArgsConstructor
 public class RestaurantController {
 
 
-    private final RestaurantRepository restaurantRepository;
+    private final RestaurantService restaurantService;
 
-    public RestaurantController(RestaurantRepository restaurantRepository){
-        this.restaurantRepository = restaurantRepository;
-    }
 
-    @PostMapping("/api/restaurants")
+    @PostMapping("/restaurants")
     public RestaurantResponseDTO createRestaurant(
             @RequestBody RestaurantCreateDTO request
     ){
-        var restaurant = toRestaurantDTO(request);
-        var savedRestaurant = restaurantRepository.save(restaurant);
-        return toRestaurantResponseDTO(savedRestaurant);
+        return restaurantService.saveRestaurant(request);
     }
 
-    private Restaurant toRestaurantDTO(RestaurantCreateDTO dto){
-        var restaurant = new Restaurant();
-        restaurant.setName(dto.name());
-        restaurant.setPhonenumber(dto.phonenumber());
-        restaurant.setEmail(dto.email());
-        restaurant.setNuit(dto.nuit());
 
-        return restaurant;
+  /*  @GetMapping("/restaurants/{id}")
+    public RestaurantResponseDTO getRestaurant(
+            @PathVariable String id
+    ){
+         Restaurant restaurant = restaurantRepository.findById(id)
+                 .orElseThrow(() -> new ResponseStatusException(
+                        HttpStatus.NOT_FOUND, "Restaurant not found"
+                ));
 
-    }
-
-    private RestaurantResponseDTO toRestaurantResponseDTO(Restaurant dto){
-        return new RestaurantResponseDTO(
-                dto.getName(),
-                dto.getPhonenumber(),
-                dto.getEmail()
-        );
-    }
+         return toRestaurantResponseDTO(restaurant);
+    }*/
 
 
 }

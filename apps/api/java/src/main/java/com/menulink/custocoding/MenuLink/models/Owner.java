@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -23,7 +25,7 @@ public class Owner {
     private String email;
 
     @OneToMany(mappedBy = "owner")
-    private Restaurant restaurant;
+    private List<Restaurant> restaurant;
 
 
 
