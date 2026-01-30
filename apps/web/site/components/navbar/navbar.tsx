@@ -1,9 +1,9 @@
 'use client'; 
 import Nav from "./nav";
-import { Sun, Moon, UserRound } from 'lucide-react';
-import { useState } from 'react';
+import {  UserRound } from 'lucide-react';
 import ThemeToggle from "../ThemeToggle/themetoggle";
 import LangToggle from "../i18n/langToggle";
+import { MobileMenu } from "./MobileMenu";
 
 export default function Navbar(){
 
@@ -15,7 +15,10 @@ export default function Navbar(){
            <div className="menudesktop items-center justify-center gap-6 hidden md:flex">
             <Nav/>
            </div>
-           <div className="buttons flex items-center justify-center gap-3">
+           <div className="mobilemenu flex md:hidden">
+            <MobileMenu/>
+           </div>
+           <div className="buttons hidden md:flex items-center justify-center gap-3">
             <LangToggle/>
             <ThemeToggle/>
             <button className="bg-foreground/20 hover:text-green-600 hover:p-2 hover:font-semibold transition-colors duration-600 rounded-full p-1 cursor-pointer">

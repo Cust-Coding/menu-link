@@ -27,5 +27,8 @@ export default function Nav() {
         </a>
       ))}
     </nav>
+    
+    </>
+    
   );
 }

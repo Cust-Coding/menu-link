@@ -2,51 +2,23 @@ package com.menulink.custocoding.MenuLink.controllers;
 
 import com.menulink.custocoding.MenuLink.dtos.CustomerCreateDTO;
 import com.menulink.custocoding.MenuLink.dtos.CustomerResponseDTO;
-import com.menulink.custocoding.MenuLink.models.Customer;
-import com.menulink.custocoding.MenuLink.repositories.CustomerRepository;
+import com.menulink.custocoding.MenuLink.services.CustomerService;
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-
+@AllArgsConstructor
 public class CustomerController {
 
-    public final CustomerRepository customerRepository;
-
-    public CustomerController(CustomerRepository customerRepository){
-        this.customerRepository = customerRepository;
-    }
-
+    private final CustomerService customerService;
 
     @PostMapping("/api/customers")
-    public CustomerResponseDTO createCustomer(
-            @RequestBody CustomerCreateDTO request
+    public CustomerResponseDTO saveCustomer(
+            @RequestBody CustomerCreateDTO customer
     ){
-        var customer = toCustomerDTO(request);
-        var savedCustomer = customerRepository.save(customer);
-        return toCustomerResponseDTO(savedCustomer);
-
+        return  customerService.saveCustomer(customer);
     }
-
-    private Customer toCustomerDTO(CustomerCreateDTO dto){
-        var customer = new Customer();
-
-        customer.setUsername(dto.username());
-        customer.setPhonenumber(dto.phonenumber());
-        customer.setGender(dto.gender());
-
-        return customer;
-
-    }
-    private CustomerResponseDTO toCustomerResponseDTO(Customer dto){
-        return new CustomerResponseDTO(
-                dto.getId(),
-                dto.getUsername(),
-                dto.getPhonenumber(),
-                dto.getGender()
-        );
-    }
-
 
 
 

@@ -1,6 +1,7 @@
 package com.menulink.custocoding.MenuLink.models;
 
 
+import com.menulink.custocoding.MenuLink.enums.EmployeesRoles;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -32,7 +33,7 @@ public class Employee {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    public Employee role;
+    public EmployeesRoles role;
 
     @ManyToOne
     @JoinColumn(name = "restaurant_id")
