@@ -13,8 +13,7 @@ const plans: Plan[] = [
     price: "0 MZN / mês",
     features: [
       "Menu digital",
-      "QR Code",
-      "Pedidos Pay First",
+      "Dashboard interativo",
       "Histórico de pedidos",
       "Caixa de reclamação do Customer",
     ],
@@ -40,7 +39,7 @@ const plans: Plan[] = [
       "Tudo do PRO",
       "AI para recomendação e upsell",
       "Analytics avançado",
-      "Dashboard interativo",
+      
     ],
     limits: ["Até 300 produtos ativos", "4GB de dados do restaurante"],
   },
