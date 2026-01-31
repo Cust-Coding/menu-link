@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer";
 import Navbar from "@/components/navbar/navbar";
 import Pricing from "@/components/pricing";
 
@@ -6,6 +7,8 @@ export default function Home() {
   <>
   <Navbar/>
   <Pricing/>
+
+  <Footer/>
   </>
     
   );

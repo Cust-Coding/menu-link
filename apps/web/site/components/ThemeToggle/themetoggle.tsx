@@ -2,7 +2,7 @@ import { Sun, Moon } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
-  //essa cena de window e para ver se esta mo servidor ou nao boss
+  
   const [theme, setTheme] = useState(() => {
     if (typeof window !== "undefined") {
       return localStorage.getItem("theme") || "light";
@@ -26,7 +26,7 @@ export default function ThemeToggle() {
     
       <div
         suppressHydrationWarning={true}
-        //Sol
+        
         className={`items-center justify-center flex rounded-full cursor-pointer ${
           theme === "light" ? "bg-green-50/30" : " "
         }`}
@@ -37,11 +37,11 @@ export default function ThemeToggle() {
         className={`transition-all ${
     theme === "light" 
       ? "text-orange-500 stroke-[3px]" 
-      : "text-black"                   
+      : "text-black"
   }`} />
       </div>
 
-      {/* lua */}
+    
       <div
         className={`items-center p-1 justify-center flex rounded-full cursor-pointer ${
           theme === "dark" ? "bg-green-50/30" : ""
