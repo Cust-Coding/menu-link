@@ -13,6 +13,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --login:#171717;
 }
 
 /* botei essa nova class para tirar aquela cena de preferencia  */
@@ -33,3 +34,6 @@ body {
   font-family: var(--font-work-sans), sans-serif;
   transition:color 0.3s ease, background-color 0.3s ease,; 
 }
+
+
+ 

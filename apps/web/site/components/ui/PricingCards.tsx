@@ -48,7 +48,7 @@ const plans: Plan[] = [
 
 export default function PricingCards() {
   return (
-    <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch px-6 py-12 ">
+    <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch px-6 py-12 overflow-hidden ">
       {plans.map((plan) => (
         <div
           key={plan.name}
@@ -65,7 +65,7 @@ export default function PricingCards() {
             </span>
           )}
 
-          <h3 className="text-xl text-green-600 font-bold text-start text-black">{plan.name}</h3>
+          <h3 className="text-xl text-green-600 font-bold text-start">{plan.name}</h3>
 
             <p className="text-start text-black my-4">
                 <span className="text-3xl font-bold">{plan.price.split(" ")[0]}</span>{" "}
