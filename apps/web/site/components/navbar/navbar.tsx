@@ -8,7 +8,7 @@ import { MobileMenu } from "./MobileMenu";
 export default function Navbar(){
 
     return(
-        <div className="flex z-10 w-full fixed top-0 p-3 bg-transparent  items-center justify-around ">
+        <div className="flex z-10 w-full fixed top-0 p-3 bg-background  items-center justify-around ">
            <div className="logo">
             <h2 className="">Menu Link</h2>
            </div>
