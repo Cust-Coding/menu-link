@@ -7,5 +7,7 @@ public record RestaurantCreateDTO(
     String phonenumber,
     String email,
     String nuit
+/*    String ownerId,
+    String adressId*/
 ) {
 }

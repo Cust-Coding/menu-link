@@ -6,10 +6,12 @@ import com.menulink.custocoding.MenuLink.models.Restaurant;
 import java.math.BigDecimal;
 
 public record ProductResponseDTO(
+        Long id,
         String name,
         String description,
         BigDecimal price,
-        Restaurant restaurant,
-        ProductStock stock
+        String restaurantId,
+        String restaurantName
+
 ) {
 }

@@ -9,7 +9,7 @@ public record ProductCreateDTO(
         String name,
         String description,
         BigDecimal price,
-        Restaurant restaurant,
-        ProductStock stock
+        String restaurantId
+
 ) {
 }

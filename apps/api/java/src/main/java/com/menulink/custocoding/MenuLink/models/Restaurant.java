@@ -42,12 +42,12 @@ public class Restaurant {
 
 
     @OneToOne
-    @JoinColumn(name = "adress_id", nullable = false)
+    @JoinColumn(name = "adress_id", nullable = true)
     private RestaurantAdress adress;
 
 
     @ManyToOne
-    @JoinColumn(name = "owner_id",nullable = false)
+    @JoinColumn(name = "owner_id",nullable = true)
     private Owner owner;
 
 
