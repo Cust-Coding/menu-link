@@ -1,3 +1,74 @@
-# Default ignored files
-/shelf/
-/workspace.xml
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Eclipse ###
+.settings/
+.classpath
+.project
+*.class
+bin/
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+### Gradle ###
+.gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+### Sistema Operacional ###
+.DS_Store
+Thumbs.db
+
+### Logs ###
+*.log
+logs/
+
+### Arquivos de configuração local ###
+*.properties
+*.yml
+!application.yml
+!bootstrap.yml
+!application-*.yml
+
+### Arquivos compilados ###
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+### Banco de dados local / arquivos temporários ###
+*.db
+*.sql
+*.h2.db
+*.mv.db
+/temp/
+/tmp/
+
+### Arquivos de ambiente local ###
+.env
+.env.local
