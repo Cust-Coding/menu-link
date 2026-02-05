@@ -6,16 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="4cb05f1c-cc35-4879-a508-d5aac4e96246" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/dtos/RestaurantCreateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/dtos/RestaurantCreateDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/dtos/RestaurantResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/dtos/RestaurantResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/mappers/RestaurantMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/mappers/RestaurantMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/models/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/models/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/models/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/models/Owner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/repositories/OwnerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/repositories/OwnerRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -45,7 +50,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.MenuLinkApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
