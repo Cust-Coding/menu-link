@@ -5,9 +5,10 @@ public record RestaurantResponseDTO(
         String name,
         String phonenumber,
         String email,
-        String nuit
-   /*     String adressId,
-        String ownerId*/
+        String nuit,
+        Long ownerId,
+        String ownerName
+        /*String adressId,*/
 
 
 ) {

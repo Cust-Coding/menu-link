@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cb05f1c-cc35-4879-a508-d5aac4e96246" name="Changes" comment="" />
+    <list default="true" id="4cb05f1c-cc35-4879-a508-d5aac4e96246" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/dtos/RestaurantCreateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/dtos/RestaurantCreateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/dtos/RestaurantResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/dtos/RestaurantResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/mappers/RestaurantMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/mappers/RestaurantMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/models/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/models/Owner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/repositories/OwnerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/menulink/custocoding/MenuLink/auth/repositories/OwnerRepository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,15 +20,45 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "WesleyBule"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Cust-Coding/menu-link",
+    "accountId": "fd9dfdb0-e8df-4821-9258-23b15a602808"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="39Fgy5Bv9wLYlueV3xn3tD6sVUi" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "main"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
   }
 }]]></component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4cb05f1c-cc35-4879-a508-d5aac4e96246" name="Changes" comment="" />
+      <created>1770297487435</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770297487435</updated>
+    </task>
     <servers />
   </component>
 </project>
