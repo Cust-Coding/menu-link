@@ -47,7 +47,7 @@ public class Restaurant {
 
 
     @ManyToOne
-    @JoinColumn(name = "owner_id",nullable = true)
+    @JoinColumn(name = "owner_id",nullable = false)
     private Owner owner;
 
 
